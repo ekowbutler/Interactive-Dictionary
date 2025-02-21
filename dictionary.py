@@ -5,4 +5,5 @@ with open("data.json", "r") as file:
 
 print(data)
 
-input("\nPress Enter ot exit...")
+def user_input_word():
+    
