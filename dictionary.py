@@ -3,7 +3,11 @@ import json
 with open("data.json", "r") as file:
     data = json.load(file)
 
-print(data)
 
-def user_input_word():
-    
+def translate(word):
+    return data[word]
+
+
+word = input("enter word : ")
+
+print(translate(word))
