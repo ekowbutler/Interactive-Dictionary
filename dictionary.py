@@ -16,6 +16,8 @@ def translate(word):
             return data[get_close_matches(word, data.keys())[0]]
         elif user_decision == ("N").lower():
             return (word, ": word not found")
+        else:
+            return "the query is not supported"
 
 
 word = input("enter word : ").lower()
